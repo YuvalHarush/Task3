@@ -1,28 +1,10 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
 #include <stdio.h>
 #include "Sorting.h"
-#include "Texting.h"
-#define TEXT 7680
 #define size 50
-//TEXT= max lines X max words in lines= 256 X 30= 7680;
 
-
-int main(){
-    //PART 1 Definitions:
+void PartAQuestion (){
     int arrs [size]= {NULL};
     int temp =0; int num=0; int flag1=0; int element_index= 0; int max_num=0;
-    // PART 2 definitions:
-    char Text [TEXT];
-
-    
-    //PART 1 (30 Pts):
     printf ("PART ONE- SORTING:\n");
     printf ("\n");
     printf ("An array with 50 numbers is going to be set\n");
@@ -57,15 +39,4 @@ int main(){
             return printf("invalid input\n");
     }
     shift_element(arrs,element_index);
-
-    
-    //PART 2 (70 Pts):
-    printf ("\n");
-    printf ("PART TWO- TEXT WILL NOW COMMANCE:\n");
-    printf ("Please enter a Text: ");
-    gets(Text);
-    printf ("A) Print all sentences with chosen words: \n");
-    print_lines (Text);
-    printf ("B) Print all simillar words to a chosen word: \n");
-    print_similar_words (Text);
 }
